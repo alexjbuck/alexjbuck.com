@@ -1,7 +1,14 @@
 ---
-path: What is the path?
-date: 2022-07-17T19:26:45.172Z
-title: Using the CMS
-description: This is my first entry using the Netlify CMS
+title: Hello World
+date: 2022-07-17T19:30:45.172Z
+description: Welcome to my blog
 ---
-I wanted to check out how this works. I've been editing just in VS Code and direct GitHub commits so far.
+Well hello.
+
+I'm sure I'll write a lot more interesting things in the future.
+
+```js
+function helloWorld() {
+  console.log("Hello World!")
+}
+```
