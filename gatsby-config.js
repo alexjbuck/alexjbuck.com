@@ -1,12 +1,16 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `Gatsby Starter Personal Blog`,
-    author: `Gatsby`,
-    description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
+    title: `The Connector`,
+    author: `Alexander Buck`,
+    description: `The personal site of Alexander Buck.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
-      twitter: `gatsbyjs`,
+      twitter: `alexjbuck`,
+      linkedin: `alexjbuck-101`,
+      github: `alexjbuck`,
+      instagram: `alexjbuck`,
+      email: `alexjbuck@gmail.com`
     },
   },
   plugins: [
@@ -81,9 +85,6 @@ module.exports = {
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 590,
-            },
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
@@ -114,14 +115,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
+        name: `Alexander Buck`,
         short_name: `GatsbyJS`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
         // edit below
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/icon.png`,
       },
     },
     {

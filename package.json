@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-personal-starter-blog",
+  "name": "alexjbuck.com",
   "private": true,
-  "description": "A personal blog starter for a blog powered by Netlify CMS, based on the default blog starter",
+  "description": "The personal site of Alexander Buck",
   "version": "2.0.0",
-  "author": "Thomas Wang <thomas@wang.sh>",
+  "author": "Alexander Buck <alexjbuck@gmail.com>",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
@@ -36,6 +36,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
+    "react-icons": "^4.4.0",
     "react-switch": "^5.0.0",
     "react-typography": "^0.16.19",
     "react-use-flexsearch": "^0.1.1",
@@ -50,15 +51,22 @@
     "gatsby-plugin-root-import": "^2.0.5",
     "prettier": "^1.17.0"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/alexjbuck/alexjbuck.com",
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "alexjbuck",
+    "alexander",
+    "buck",
+    "alexander buck",
+    "alexjbuck.com",
+    "aviation",
+    "blog"
   ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/alexjbuck/alexjbuck.com.git"
   },
   "scripts": {
     "build": "gatsby build",
