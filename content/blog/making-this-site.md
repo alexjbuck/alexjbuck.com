@@ -50,30 +50,32 @@ The last item I added was a "Scroll to Top" component. It's pretty straightforwa
 
 The fancy bits came when I wanted the component to fade in as you scroll down. I needed to store the `display` state, so I brought in `useState`. 
 ```javascript
-    const [display,setDisplay] = useState(false);
+const [display,setDisplay] = useState(false);
 ```
 In order to set the `display` state, I needed to check if the window had scrolled down. This is where `useEffect` comes in; it lets us add a `scroll` event listener to the `window` object when the component is loaded. We give `useEffect` no dependencies so it won't ever run again, just the one time on load.
 
 ```javascript
-    useEffect(() => {
-        const checkScrollTop = () => {
-            if (!display && window.pageYOffset > 100) {
-                setDisplay(true);
-            } else if (display && window.pageYOffset <= 100) {
-                setDisplay(false);
-            }
+useEffect(() => {
+    const checkScrollTop = () => {
+        if (!display && window.pageYOffset > 100) {
+            setDisplay(true);
+        } else if (display && window.pageYOffset <= 100) {
+            setDisplay(false);
         }
-        window.addEventListener('scroll', checkScrollTop);
-    });
+    }
+    window.addEventListener('scroll', checkScrollTop);
+});
 ```
 
 Now, when the window scrolls, once it scrolls past the defined threshold, the `display` flag gets set to `true` instead of `false`.
 
 Down in the return section, we add a style attribute with value:
 ```javascript
-    return (
-        <ScrollTop style={{display: display?'flex':'none'}} onClick={...}>...</ScrollTop>
-    )
+return (
+    <ScrollTop style={{display: display?'flex':'none'}} onClick={...}>
+        ...
+    </ScrollTop>
+)
 ```
 The only thing left is to set the style for `<ScrollTop>` and pick an icon.
 
