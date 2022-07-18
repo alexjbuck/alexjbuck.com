@@ -4,6 +4,7 @@ import styled from "styled-components"
 import Navigation from "./navigation"
 import ToTop from "./toTop"
 import { rhythm } from "../utils/typography"
+import './layout.css'
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
