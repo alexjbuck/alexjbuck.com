@@ -14,7 +14,7 @@ const AboutPage = ({data, location}) => {
                 title="Home"
                 keywords={[`blog`, `alex`, `alexjbuck`,`aviation`,`defense`, `javascript`, `react`]}
             />
-            <p>Problem Solver. Naval Aviator. Leader.</p>
+            <p>Problem Solver · Naval Aviator · Leader</p>
             <p>I bring a diverse background, spanning a wide range of operations, project management, development, and engineering. </p> 
             <h1>Contact</h1>
             <ul>
