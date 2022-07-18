@@ -2,8 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import Navigation from "./navigation"
-
-import { rhythm, scale } from "../utils/typography"
+import ToTop from "./toTop"
+import { rhythm } from "../utils/typography"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -11,16 +11,11 @@ const Layout = ({ location, title, children }) => {
   const aboutPath = `${__PATH_PREFIX__}/about/`
   let header
 
-  if (location.pathname === rootPath || location.pathname === blogPath || location.pathname === aboutPath) {
+
+if (location.pathname === rootPath || location.pathname === blogPath || location.pathname === aboutPath) {
     header = (
       <>
-      <h1
-        style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
-          marginTop: 0,
-        }}
-      >
+      <h1>
         <Link
           style={{
             boxShadow: `none`,
@@ -57,22 +52,24 @@ const Layout = ({ location, title, children }) => {
   }
   return (
     <Wrapper>
+      <Navigation location={location}/>
       <div
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
-          maxWidth: rhythm(24),
+          width: rhythm(24),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          position: "relative",
         }}
       >
-        <Navigation location={location}/>
         <header>{header}</header>
         <main>{children}</main>
+      <ToTop />
       </div>
       <Footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <div>
+        © {new Date().getFullYear()}, Built with <a href="https://www.gatsbyjs.org">Gatsby</a>
+        </div>
       </Footer>
     </Wrapper>
   )
@@ -80,13 +77,17 @@ const Layout = ({ location, title, children }) => {
 
 const Wrapper = styled.div`
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 `
 
 const Footer = styled.footer`
-  text-align: center;
+  justify-content: center;
+  align-items: end;
   margin: 24px;
+  flex-grow: 1;
+  display:inline-flex;
+  flex-direction: row;
 `
-
-
 
 export default Layout

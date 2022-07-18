@@ -5,7 +5,7 @@ import { GithubSnippet, LinkedInSnippet } from './socialSnippet'
 
 const Navigation = ({ location }) => {
     return (
-        <nav>
+        <Nav>
             <NavItem location={location} to="/" href="/">
                 Home
             </NavItem>
@@ -21,7 +21,7 @@ const Navigation = ({ location }) => {
             <NavItem location={location} >
                 <GithubSnippet />
             </NavItem>
-        </nav>
+        </Nav>
     )
 }
 
@@ -51,13 +51,15 @@ const Wrapper = styled.div`
     }
     a {
         text-decoration: none;
-        font-family: 'Robato', sans-serif;
-        color: ${props => props.isActive ? "gray" : "inherit"};
-        box-shadow: 0 0 0 0 currentColor;
+        color: ${props => props.isActive ? "#cc5500" : "inherit"};
+        box-shadow: 0 ${props => props.isActive ? "2px" : "0"} 0 0 currentColor;
     }
     a:hover {
-        box-shadow: 0 1px 0 0 currentColor;
+        box-shadow: 0 2px 0 0 currentColor;
     }
     `
 
+const Nav = styled.nav`
+    padding: 0.5em 1em;
+`
 export default Navigation

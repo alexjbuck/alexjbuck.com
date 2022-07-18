@@ -11,7 +11,20 @@ collections:
     folder: content/blog
     create: true
     fields:
-      - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
+      - { name: date, label: Date, widget: date }
       - { name: description, label: Description }
       - { name: body, label: Body, widget: markdown }
+  
+  - name: about
+    label: about
+    folder: content/about
+    fields:
+      - { name: title, label: Title }
+      - { name: date, label: Date, widget: date }
+      - { name: description, label: Description }
+      - { name: contact, label: Contact }
+      - { name: experience, label: Experience }
+      - { name: education, label: Education }
+      - { name: software-skills, label: Software Skills }
+      
