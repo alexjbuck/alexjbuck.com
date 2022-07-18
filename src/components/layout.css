@@ -3,10 +3,10 @@ a {
     box-shadow: none;
     color: #cc5500
 }
-a:hover {
+/* a:hover {
     text-decoration: none;
     box-shadow: 0 1px 0 0 currentColor;
-}
+} */
 
 body {
     background: linear-gradient(-30deg,#ffffff 60%, #C0C0C0);

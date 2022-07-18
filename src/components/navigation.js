@@ -2,11 +2,16 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { GithubSnippet, LinkedInSnippet } from './socialSnippet'
+import Connector from '../../content/svgs/connector.svg'
+import { rhythm } from '../utils/typography'
 
 const Navigation = ({ location }) => {
     return (
         <Nav>
-            <NavItem location={location} to="/" href="/">
+            <Link to="/" location={location} style={{margin: '0 0.5rem 0 0'}}>
+                <img src={Connector} alt={'Connector'} style={{height:rhythm(1),verticalAlign:'middle', margin:'0'}}></img>
+            </Link>
+            <NavItem location={location} to="/">
                 Home
             </NavItem>
             <NavItem location={location} to="/blog/">
@@ -25,7 +30,7 @@ const Navigation = ({ location }) => {
     )
 }
 
-const NavItem = ({ to, href, children, location }) => {
+const NavItem = ({ to, children, location }) => {
     const isActive = location.pathname === to
     if (to) {
         return (
@@ -46,9 +51,6 @@ const NavItem = ({ to, href, children, location }) => {
 const Wrapper = styled.div`
     display: inline-block;
     margin: 0 0.5rem;
-    &:first-child {
-        margin-left: 0;
-    }
     a {
         text-decoration: none;
         color: ${props => props.isActive ? "#cc5500" : "inherit"};
@@ -57,6 +59,7 @@ const Wrapper = styled.div`
     a:hover {
         box-shadow: 0 2px 0 0 currentColor;
     }
+    
     `
 
 const Nav = styled.nav`

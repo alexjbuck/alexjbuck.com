@@ -122,8 +122,16 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         // edit below
-        icon: `content/assets/icon.png`,
+        icon: `content/assets/connector.png`,
       },
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: `/svgs/`
+        }
+      }
     },
     {
       resolve: `gatsby-plugin-typography`,
