@@ -1,4 +1,4 @@
-name: gh pages deploy
+name: Deploy
 
 on:
   push:
@@ -15,3 +15,17 @@ jobs:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           deploy-branch: gh-pages
           gatsby-args: --prefix-paths
+
+  aws-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with: 'gh-pages'
+    - name: Set AWS credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        role-to-assume: arn:aws:iam::870257933230:role/Github-Actions-Role
+        aws-region: us-east-1
+    - name: Copy to bucket
+      run: |
+        aws s3 sync . s3://alexjbuck.com --delete
