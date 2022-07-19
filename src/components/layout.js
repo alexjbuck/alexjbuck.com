@@ -58,7 +58,8 @@ if (location.pathname === rootPath || location.pathname === blogPath || location
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
-          width: rhythm(24),
+          maxWidth: rhythm(24),
+          minWidth: rhythm(12),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
           position: "relative",
         }}
