@@ -17,10 +17,12 @@ jobs:
           gatsby-args: --prefix-paths
 
   aws-deploy:
+    needs: build
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-      with: gh-pages
+      with: 
+        ref: gh-pages
     - name: Set AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
