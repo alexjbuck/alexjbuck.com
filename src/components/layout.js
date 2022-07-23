@@ -70,7 +70,7 @@ if (location.pathname === rootPath || location.pathname === blogPath || location
       </div>
       <Footer>
         <div>
-        © {new Date().getFullYear()}, Built with <a href="https://www.gatsbyjs.org">Gatsby</a>
+        © {new Date().getFullYear()}
         </div>
       </Footer>
     </Wrapper>

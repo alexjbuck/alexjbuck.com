@@ -16,7 +16,7 @@ const AboutPage = ({data, location}) => {
                 keywords={[`blog`, `alex`, `alexjbuck`,`aviation`,`defense`, `javascript`, `react`]}
             />
             <p>Problem Solver · Naval Aviator · Leader</p>
-            <p>I bring a diverse background, spanning a wide range of operations, project management, development, and engineering. </p> 
+            <p>I bring a diverse background, spanning a wide range of operations, project management, development, and engineering.</p> 
             
             <h1>Contact</h1>
             <ul>
@@ -27,11 +27,11 @@ const AboutPage = ({data, location}) => {
 
             <h1>Experience</h1>
             <ul>
-                <li>1200+ hours of naval aviation experience</li>
-                <li>Space Systems Operations subspecialty code (6206-L)</li>
+                <li>1200+ hours of naval aviation experience (T-6B, TH-57, MH-60R)</li>
+                <li>Knowledgeable on Naval Space Systems Operations (subspecialty code 6206-L)</li>
                 <li>Fielded US Navy mission software applications.</li>
-                <li>Ran operations research/statistical analysis of lightweight torpedoes effects.</li>
-                <li>Built and tested space-fielded hardware.</li>
+                <li>Conducted operations research/statistical analysis of lightweight torpedoes effects.</li>
+                <li>Built and tested space-fielded hardware (RINGS @ MIT Space Systems Lab).</li>
             </ul>
 
             <h1>Projects</h1>
@@ -58,7 +58,7 @@ const AboutPage = ({data, location}) => {
                 <li>JavaScript/React</li>
                 <li>Python</li>
                 <li>C/C++</li>
-                <li>Git</li>
+                <li>AWS Cloud Infrastructure</li>
             </ul>
        
         </Layout>
