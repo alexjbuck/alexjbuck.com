@@ -12,7 +12,7 @@ const AboutPage = ({data, location}) => {
     return(
         <Layout location={location} title={siteTitle}>
             <SEO
-                title="Home"
+                title="About"
                 keywords={[`blog`, `alex`, `alexjbuck`,`aviation`,`defense`, `javascript`, `react`]}
             />
             <p>Problem Solver · Naval Aviator · Leader</p>
