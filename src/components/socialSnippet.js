@@ -12,7 +12,7 @@ export function LinkedInSnippet() {
     <Wrapper>
       <a href={`https://www.linkedin.com/in/${social.linkedin}`}>
         <IconContext.Provider value={{ color: '#0072b1', style:{'marginBottom':'4px', verticalAlign: 'middle'}}}>
-          <FaLinkedin /> LinkedIn
+          <FaLinkedin /> <TextSpan>LinkedIn</TextSpan>
         </IconContext.Provider>
       </a>
     </Wrapper>
@@ -26,7 +26,7 @@ export function GithubSnippet() {
     <Wrapper>
       <a href={`https://www.github.com/${social.github}`}>
         <IconContext.Provider value={{ color: '#bd2c00', style:{'marginBottom':'4px', verticalAlign: 'middle'}}}>
-          <FaGithub /> GitHub
+          <FaGithub /> <TextSpan>GitHub</TextSpan>
         </IconContext.Provider>
       </a>
     </Wrapper>
@@ -40,7 +40,7 @@ export function EmailSnippet() {
     <Wrapper>
       <a href={`mailto:${social.email}`}>
         <IconContext.Provider value={{ color: '#0072b1', style:{'marginBottom':'4px', verticalAlign: 'middle'}}}>
-          <RiMailSendLine /> Email
+          <RiMailSendLine /> <TextSpan>Email</TextSpan>
         </IconContext.Provider>
       </a>
     </Wrapper>
@@ -58,4 +58,12 @@ const Wrapper = styled.div`
   }
   box-shadow: none;
   display: inline-block;
+`
+
+const TextSpan = styled.span`
+  @media (max-width: 500px) {
+    nav & {
+      display: none;
+    }
+  }
 `

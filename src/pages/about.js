@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
+import ResumeEntry from "../components/resumeEntry"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { GithubSnippet, LinkedInSnippet, EmailSnippet } from "../components/socialSnippet"
@@ -26,13 +27,23 @@ const AboutPage = ({data, location}) => {
             </ul>
 
             <h1>Experience</h1>
-            <ul>
-                <li>1200+ hours of naval aviation experience (T-6B, TH-57, MH-60R)</li>
-                <li>Knowledgeable on Naval Space Systems Operations (subspecialty code 6206-L)</li>
-                <li>Fielded US Navy mission software applications.</li>
-                <li>Conducted operations research/statistical analysis of lightweight torpedoes effects.</li>
-                <li>Built and tested space-fielded hardware (RINGS @ MIT Space Systems Lab).</li>
-            </ul>
+            <ResumeEntry company="US Navy" jobTitle="Weapons and Tactics Instructor" startDate="2018" endDate="Present" description={[
+                'Graduate, Rotary Wing Weapons School (SEAWOLF).',
+                'Developed data pipeline for collecting MH-60R mission data from deployed units.',
+                'Conducted operations research/analysis of lightweight torpedoes effects.',
+                'Knowledgeable on Naval Space Systems Operations (subspecialty code 6206-L).',
+            ]} />
+            <ResumeEntry company="US Navy" jobTitle="Naval Aviator" startDate="2011" endDate="Present" description={[
+                '1200+ hours of naval aviation experience (T-6B, TH-57, MH-60R).',
+                'Led the maintenance quality assurance shop, with responsibility for the safe maintenance of 11 aircraft.',
+                'Fielded mission software applications supporting Carrier Air Wing operations.',
+                ]} />
+            <ResumeEntry company="MIT" jobTitle="Research Assistant" startDate="2011" endDate="2013" description={[
+                'Designed, tested, and built both development and flight hardware involving high-power electronics.',
+                'Tested hardware and implemented software interface for expansion communications port of SPHERES (Synchronized Position Hold Engage Re-orient Experimental Satellite).',
+                'Developed hardware-in-the-loop physics simulation for RINGS (Resonant Induction Near-field Generation System).',
+
+                ]} />
 
             <h1>Projects</h1>
             <ul>
