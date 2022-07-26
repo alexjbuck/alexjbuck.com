@@ -17,13 +17,13 @@ I was still nervous about my ability to provide anything meaningful at the event
 
 I arrived at 0900 to a notification from my friend that work commitments held him up and he would be late. _Alright_, I'll be going into this one alone. I walk in and there's already a large group of folks sitting at the tables around the room. I pick a table near the back and get some coffee. 
 
-The event kicks off with some administrative briefs: schedules, security procedures, etc... Just after noon we're allowed into the classified development room for the first time. We had access to some interesting data files, however much of them were binary structured data, and we did not have the necessary documentation or parsing software to unpack these files!
+The event kicks off with some administrative briefs: schedules, security procedures, etc... Just after noon we're allowed into the classified development room for the first time. We had access to some interesting data files, however much of them were binary structured data, and we did not have the necessary documentation or parsing software to unpack these files! I can understand not having nice documentation that explains in detail how to interpret each field from a file, but these are binary packed files, that
 
 Once everyone had a chance to log in, the event began properly. The next several hours was a back and forth of looking at what data was available and readable, mixed in with trying to set up a proper development environment. There was a [JCN](https://www.ai.mil/jcf.html) and [Stitches](https://stitches.mil) server available locally. Both services provided GitLab and Jupyter (among some other tools). Neither server was working at first, so we dug through the share drive to find application installers for the local machine. 
 
 I think most people were configuring an environment as a way of putting of digging into the data and figuring out what they were going to do. There was a fair bit of groaning and griping, about data documentation, quality, availability, readability, and so on. 
 
-The first day ended with a more-or-less functional development environment on JCN once it finally came up. A git repo and a functioning python environment. 
+The first day ended with a more-or-less functional development environment on JCN once it finally came up. I had a git repository and a functioning python environment.
 
 # Day 2 Onward
 
@@ -63,6 +63,6 @@ It can be fun to run analyses, but the only reason we're doing it is to solve a 
 
 # Wrap up
 
-I would definitely attend an event like this again. We were warned at the beginning that the first day or so would be awkward. It was, it still felt wrong, but teams still got to a good place by the end. Maybe that's just how these things work. 
+I would definitely attend an event like this again. We were warned at the beginning that the first day or so would be awkward. It was. It still felt wrong, but teams got to a good place by the end of the week. Maybe that's just how these things work. I think Stuart Wagner and the USAF team supporting BRAVO Hackathon will take some of the lessons observed here and the next iteration will be even more successful.
 
-
+The real highlight was that I met a lot of really great people from other parts of the DoD, many of which I will keep in contact with going forward.
