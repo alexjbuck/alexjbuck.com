@@ -36,18 +36,20 @@ const AboutPage = ({data, location}) => {
             <ResumeEntry company="US Navy" jobTitle="Naval Aviator" startDate="2011" endDate="Present" description={[
                 '1200+ hours of naval aviation experience (T-6B, TH-57, MH-60R).',
                 'Led the maintenance quality assurance shop, with responsibility for the safe maintenance of 11 aircraft.',
-                'Fielded mission software applications supporting Carrier Air Wing operations.',
+                'Fielded multiple mission software applications supporting Carrier Air Wing operations.',
                 ]} />
             <ResumeEntry company="MIT" jobTitle="Research Assistant" startDate="2011" endDate="2013" description={[
-                'Designed, tested, and built both development and flight hardware involving high-power electronics.',
                 'Tested hardware and implemented software interface for expansion communications port of SPHERES (Synchronized Position Hold Engage Re-orient Experimental Satellite).',
                 'Developed hardware-in-the-loop physics simulation for RINGS (Resonant Induction Near-field Generation System).',
-
+                'Designed, tested, and built both development and space-flight hardware involving high-power electronics. (RINGS)',
                 ]} />
 
             <h1>Projects</h1>
             <ul>
                 <li><a href='https://websites.dso.mil/sites/badmax/'>BadMax</a>: A tool for building Air Plan documents from ashore.</li>
+                <li>Cronus: A lightweight tool to cleanly archive post-mission recorded data to S3 storage (AWS Snowball Edge) or local hard drive location.</li>
+                <li>PmaParser: A command line too for batch processing Post Mission Analysis files from the MH-60R.</li>
+                <li>WaveBreaker: A tool for planning JDAM impact points to cover the area of uncertainty from a moving, unobserved target.</li>
             </ul>
 
             <h1>Publications</h1>
