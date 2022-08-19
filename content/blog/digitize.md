@@ -5,4 +5,4 @@ description: Placeholder to talk about Platform One and Digitize
 ---
 I'm going to intro the work I've done with Digitize.
 
-Until then, check out the [guide](https://alexjbuck.github.io/digitize-guide/) I wrote.
+Until then, check out the [guide](https://alexjbuck.github.io/digitize-guide/) I wrote!
