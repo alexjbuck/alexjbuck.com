@@ -27,13 +27,16 @@ const AboutPage = ({data, location}) => {
             </ul>
 
             <h1>Experience</h1>
-            <ResumeEntry company="US Navy" jobTitle="Weapons and Tactics Instructor" startDate="2018" endDate="Present" description={[
+            <ResumeEntry company="Spear AI" jobTitle="Technical Program Manager, AI/ML" startDate="2024" endDate="Present" description={[
+                'Developed data pipeline for P-8A mission data from trilateral mission partners to meet MLOps demands.',
+            ]} />
+            <ResumeEntry company="US Navy" jobTitle="Weapons and Tactics Instructor" startDate="2018" endDate="2024" description={[
                 'Graduate, Rotary Wing Weapons School (SEAWOLF).',
                 'Developed data pipeline for collecting MH-60R mission data from deployed units.',
                 'Conducted operations research/analysis of lightweight torpedoes effects.',
                 'Knowledgeable on Naval Space Systems Operations (subspecialty code 6206-L).',
             ]} />
-            <ResumeEntry company="US Navy" jobTitle="Naval Aviator" startDate="2011" endDate="Present" description={[
+            <ResumeEntry company="US Navy" jobTitle="Naval Aviator" startDate="2011" endDate="2024" description={[
                 '1200+ hours of naval aviation experience (T-6B, TH-57, MH-60R).',
                 'Led the maintenance quality assurance shop, with responsibility for the safe maintenance of 11 aircraft.',
                 'Fielded multiple mission software applications supporting Carrier Air Wing operations.',
